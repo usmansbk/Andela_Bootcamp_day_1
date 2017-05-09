@@ -1,0 +1,11 @@
+{
+  "name": "codlab2",
+  "version": "1.0.0",
+  "description": "Coding Lab 2",
+  "main": "findMinMax.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Usman Babakolo",
+  "license": "ISC"
+}
