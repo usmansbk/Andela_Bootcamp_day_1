@@ -1,4 +1,8 @@
-// Person abstract class
+/*
+ * An abstract person class that 
+ * that represents an instance of a person
+ * at Andela.
+ */
 function Person(name, email, gender) {
 	this.name = name;
 	this.email = email;
@@ -22,7 +26,10 @@ Person.prototype = {
 
 
 
-// BootcampFacilitatorAssistant (BFA) class
+/* BootcampFacilitatorAssistant (BFA) class
+ * represents the detail of every bootcamp facilitator
+ * assistant instance.
+ */
 function BFA(name, email, gender, groupName) {
 	Person.call(this, name, email, gender);
 	this.groupName = groupName;
@@ -31,11 +38,19 @@ function BFA(name, email, gender, groupName) {
 
 BFA.prototype = new Person();
 BFA.prototype.constructor  = BFA;
+/*
+ * Adds a bootcamper to the BFAs list of camper
+ * and does all necessary initalization for the camper.
+ */
 BFA.prototype.addGroupMember = function (camper) {
 	this.group.push(camper);
 	camper.setGroupName(this.groupName);
 	camper.setBFAName(this.name);
 }
+/*
+ * print the detail of every member
+ * in the BFAs list of campers.
+ */
 BFA.prototype.printGroupMembers = function() {
 	for (camper in this.group) {
 		console.log(camper);
@@ -45,7 +60,10 @@ BFA.prototype.getGroupName = function() {
 	return this.groupName;
 }
 
-// Bootcamper class
+/*
+ *This class represent the blueprint from
+ * which bootcampers are initialized.
+ */
 function BootCamper(name, email, gender) {
 	Person.call(this, name, email, gender);
 	this.groupName = undefined;
