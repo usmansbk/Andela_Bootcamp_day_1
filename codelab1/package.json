@@ -1,0 +1,11 @@
+{
+  "name": "codelab2",
+  "version": "1.0.0",
+  "description": "Coding Lab 2",
+  "main": "datatypes.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Usman Babakolo",
+  "license": "ISC"
+}
