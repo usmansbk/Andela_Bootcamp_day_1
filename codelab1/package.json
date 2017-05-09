@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/usmansbk/Andela_Bootcamp_day_1/issues"
   },
-  "homepage": "https://github.com/usmansbk/Andela_Bootcamp_day_1#readme"
+  "homepage": "https://github.com/usmansbk/Andela_Bootcamp_day_1#readme",
   "dependencies": {
   	"jasmine":"^2.6.0"
   }
