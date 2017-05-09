@@ -7,5 +7,19 @@
     "test": "jasmine"
   },
   "author": "Usman Babakolo",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmansbk/Andela_Bootcamp_day_1.git"
+  },
+  "keywords": [
+    "datatypes"
+  ],
+  "bugs": {
+    "url": "https://github.com/usmansbk/Andela_Bootcamp_day_1/issues"
+  },
+  "homepage": "https://github.com/usmansbk/Andela_Bootcamp_day_1#readme"
+  "dependencies": {
+  	"jasmine":"^2.6.0"
+  }
 }
