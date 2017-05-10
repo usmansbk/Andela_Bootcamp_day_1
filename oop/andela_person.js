@@ -18,7 +18,7 @@ class Person {
 	}
 
 	toString() {
-		return `Name: ${this.name}, email: ${this.email}, gender: ${this.gender};
+		return `Name: ${this.name}, email: ${this.email}, gender: ${this.gender}`;
 	}
 }
 
