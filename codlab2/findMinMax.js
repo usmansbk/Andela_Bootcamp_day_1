@@ -1,12 +1,22 @@
-var exports = module.exports = {};
-exports.findMinMax = function (array) {
-	let sortedArray = array.sort((x, y) => { return x-y;});
-	minMaxArray = [];
-	minimum = sortedArray[0];
-	maximum = sortedArray[sortedArray.length - 1]
-	minMaxArray.push(minimum);
-	if (minimum !== maximum) {
-		minMaxArray.push(maximum);
-	}
-	return minMaxArray;
+function find(array, condition) {
+    let target = array[0]
+    for (let i = 1; i < array.length; i++) {
+ 	if (condition(target, i))
+	    target = array[i];
+    	}
+    return min;
 }
+	
+function findMax (array) {
+    let minMaxArray = [];
+    let minimum = find(array, (x, y)=>{return y < x;});
+    let maximum = find(array, (x, y)=>{return y > x;});
+    minMaxArray.push(minimum);
+    if (minimum !== maximum) {
+        minMaxArray.push(maximum);
+    }	
+    return minMaxArray;
+}
+
+module.exports.findMax = findMax;
+module.exports.find = find;
