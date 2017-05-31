@@ -1,4 +1,4 @@
-function findMax (array) {
+function findMinMax (array) {
     function find(array, condition) {
         let target = array[0]
         for (let i = 1; i < array.length; i++) {
@@ -17,4 +17,4 @@ function findMax (array) {
     }	
     return minMaxArray;
 }
-module.exports = findMax; 
+module.exports = findMinMax; 
